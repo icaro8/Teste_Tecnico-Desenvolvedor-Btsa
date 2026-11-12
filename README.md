@@ -43,6 +43,14 @@ As migrations são aplicadas quando a API sobe, e o banco recebe contas e transf
 
 `backend/` e `frontend/` também têm `docker-compose.yml` e `Makefile` próprios, para trabalhar em cada parte separadamente.
 
+### Rodar no GitHub Codespaces (sem instalar nada)
+
+1. Na página do repositório, clique em **Code → Codespaces → Create codespace on main**. Escolha uma máquina com 4 cores, se a opção aparecer.
+2. Aguarde o ambiente iniciar. O `docker compose up` roda sozinho ao abrir (pode levar alguns minutos na primeira vez).
+3. Na aba **Ports**, abra o endereço do **Frontend** (porta 15173). O Swagger fica na porta 15080, em `/swagger`.
+
+As portas estão públicas, então o link pode ser aberto por quem você enviar, sem login no GitHub. Quando terminar, pare o Codespace em **Code → Codespaces → ... → Stop**, para não consumir a cota de horas.
+
 ## Roteiro de avaliação (5 minutos)
 
 1. **Abra o frontend** em http://localhost:15173. A tela inicial lista as contas de demonstração, com saldo, cheque especial e valor disponível.
