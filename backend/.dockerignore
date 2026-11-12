@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.idea/
+**/*.user
+**/TestResults/
+**/.env
+**/.env.*
+.git
+.gitignore
+Dockerfile
+.dockerignore
+docker-compose.yml
+Makefile
+README.md
